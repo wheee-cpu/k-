@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>ELEMENTAL BOOK O' FUN</title>
+    </head>
+   <html>
+     <body>
+<h2 id="hohoho">My Elemental Book</h2>           
+<img id="ohohoh" src="https://thumbs.dreamstime.com/t/collection-four-elements-icons-isolated-white-background-46851097.jpg">
+       <button onclick="next();">Next!</button>
+       <script>
+       var image=["https://thumbs.dreamstime.com/t/collection-four-elements-icons-isolated-white-background-46851097.jpg","http://skylanderscharacterlist.com/wp-content/uploads/2014/10/Air2-150x150.png","http://skylanderscharacterlist.com/wp-content/uploads/2014/10/Water-150x150.png","http://skylanderscharacterlist.com/wp-content/uploads/2014/10/Fire-150x150.png","http://skylanderscharacterlist.com/wp-content/uploads/2014/10/Earth-150x150.png"]
+       var text=["My Elemental Book","Air:This element symbolizes freedom.","Water:This element symbolizes the ability to adapt.","Fire:This element symbolizes power.","Earth:This element symbolizes growth."]
+       
+       var i = 0;
+
+       function next(){
+i++;
+var no_ofpages = 4
+if(i > no_ofpages)
+{
+   i = 0;
+}
+var updatedImage = image[i];
+var updatedName = text[i];
+document.getElementById("ohohoh").src = updatedImage;
+document.getElementById("hohoho").innerHTML = updatedName;
+       }
+       </script>
+       <style>
+           body{
+
+               text-align: center;
+           }
+           button{
+               margin-top: 200px;
+               width: 100%;
+               height: 100px;
+           }
+     img{
+
+         margin-top: 69px;
+     }
+           </style>
+       </body>
+     </html>
